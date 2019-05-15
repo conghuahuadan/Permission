@@ -27,7 +27,7 @@ publish {
     userOrg = 'conghuahuadan'
     groupId = 'com.conghuahuadan'
     artifactId = 'permission'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'permission'
     website = ''
 }

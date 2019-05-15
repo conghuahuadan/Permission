@@ -46,7 +46,6 @@ public class PermissionUtils {
     }
 
     private PermissionUtils(Context context) {
-        mContextRef = new WeakReference<>(context);
         mInstance = this;
     }
 
@@ -54,6 +53,7 @@ public class PermissionUtils {
         if (mInstance == null) {
             mInstance = new PermissionUtils(context);
         }
+        mInstance.mContextRef = new WeakReference<>(context);
         return mInstance;
     }
 
